@@ -15,10 +15,12 @@ namespace ConsoleApp1
             Diameter = diameter;
         }
 
+
         public override double Area()
         {
             return Math.Sqrt(Diameter) * Math.PI;
         }
+        //git test용 주석코드 추가 
 
     }
 }
