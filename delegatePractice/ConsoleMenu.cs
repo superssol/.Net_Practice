@@ -25,10 +25,11 @@ namespace delegatePractice
             string retVal = Console.ReadLine();
             foreach(MenuItem item in MenuList)
             {
-                if(item.MenuChar == retVal && item.KeyPressedDelegate != null)
+                //if (item.MenuChar == retVal && item.KeyPressedDelegate != null)
+                if (item.MenuChar == retVal)
                 {
                     //delegate 호출
-                    item.KeyPressedDelegate(this, new MenuKeyPressArgs(retVal)); 
+                    item.CallEvent(this, retVal); 
                 }
             }
         }
